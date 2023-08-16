@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_apple_model,access_apple_model,model_apple_model,,1,1,1,1
+access_appletag_model,access_appletag_model,model_appletag_model,,1,1,1,1
+access_appleoffer_model,access_appleoffer_model,model_appleoffer_model,,1,1,1,1
+access_appletype_model,access_appletype_model,model_appletype_model,,1,1,1,1

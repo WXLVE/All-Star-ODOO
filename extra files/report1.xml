@@ -1,0 +1,175 @@
+<data>
+  <xpath expr="/t/t/div" position="inside">
+    <div class="row">
+      <div class="col">
+        <span>New Text Block</span>
+      </div>
+    </div>
+  </xpath>
+  <xpath expr="/t/t/div/div/div/span" position="replace">
+    <span>Wer</span>
+  </xpath>
+  <xpath expr="/t[1]/t[1]/div[1]/div[1]/div[1]" position="replace"/>
+  <xpath expr="/t/t/div/div" position="after">
+    <div class="row">
+      <div class="col-6">
+        <span>New Column</span>
+      </div>
+      <div class="col-6">
+        <span>New Column</span>
+      </div>
+    </div>
+  </xpath>
+  <xpath expr="/t/t/div/div[2]/div[1]/span" position="replace">
+    <span>KLANTGEGEVENS</span>
+  </xpath>
+  <xpath expr="/t/t/div/div[2]/div[1]/span" position="replace">
+    <span>
+      <strong>KLANTGEGEVENS</strong>
+    </span>
+  </xpath>
+  <xpath expr="/t/t/div/div[2]/div[2]/span" position="replace">
+    <span>
+      <strong>FACTUURADRES</strong>
+    </span>
+  </xpath>
+  <xpath expr="/t/t/div/div[2]" position="after">
+    <div class="row">
+      <div class="col-6">
+        <span>New Column</span>
+      </div>
+      <div class="col-6">
+        <span>New Column</span>
+      </div>
+    </div>
+  </xpath>
+  <xpath expr="/t/t/div/div[3]/div[1]/span" position="replace">
+    <span>New Column<p><br/></p></span>
+  </xpath>
+  <xpath expr="/t/t/div/div[3]/div[2]/span" position="replace">
+    <span>
+      <br/>
+    </span>
+  </xpath>
+  <xpath expr="/t/t/div/div[3]/div[1]/span" position="replace">
+    <span>
+      <p>
+        <br/>
+      </p>
+    </span>
+  </xpath>
+  <xpath expr="/t/t/div/div[3]/div[1]/span/p" position="before">
+    <span t-field="doc.company_id.company_details"/>
+  </xpath>
+  <xpath expr="/t/t/div/div[3]/div[2]/span/br" position="before">
+    <span t-field="doc.partner_id.company_id.company_details"/>
+  </xpath>
+  <xpath expr="/t/t/div/div[3]/div[2]/span/br" position="before">
+    <span t-field="doc.partner_id.contact_address"/>
+  </xpath>
+  <xpath expr="/t/t/div/div[3]" position="after">
+    <table class="table o_report_block_table">
+      <thead>
+        <tr>
+          <th>
+            <span>Name</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr t-foreach="doc.analytic_account_id.line_ids" t-as="table_line">
+          <td>
+            <span t-field="table_line.display_name"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </xpath>
+  <xpath expr="/t/t/div/table/thead/tr/th/span" position="replace">
+    <span>WERKOMSCHRIJVING:</span>
+  </xpath>
+  <xpath expr="/t/t/div/table/thead/tr/th/span" position="replace">
+    <span>WERKOMSCHRIJVING:</span>
+  </xpath>
+  <xpath expr="/t/t/div/table" position="after">
+    <div class="row">
+      <div class="col">
+        <span>New Text Block</span>
+      </div>
+    </div>
+  </xpath>
+  <xpath expr="/t/t/div/div[4]/div/span" position="replace">
+    <span>New Text Block</span>
+  </xpath>
+  <xpath expr="/t/t/div/div[4]/div/span" position="replace">
+    <span>New Text Block<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum enim risus, ut pellentesque dui placerat eget. Cras ac lorem a magna mattis sagittis. Cras aliquet odio sed urna tristique viverra in ac mi. Ut purus nibh, dapibus egestas ornare id, condimentum at est. Mauris imperdiet vitae risus eu fringilla. Nunc consectetur risus nec nibh euismod, vel accumsan enim condimentum. Morbi a nisl porta lectus tempus pretium in et velit. Nullam lectus ipsum, volutpat eget convallis in, lobortis a erat. Morbi quis libero ut eros facilisis ornare et vel lacus. Fusce pellentesque lectus elementum, maximus nulla et, finibus augue.</p><p>Curabitur porttitor sem lorem, vel venenatis est ornare ac. Aenean id orci a tellus vestibulum sodales. Ut sed tristique sapien, sed faucibus urna. In sollicitudin id neque vel accumsan. Praesent ac convallis magna, ac ullamcorper nibh. Proin eu sagittis elit, pellentesque posuere mauris. Aenean placerat ac nibh vitae lacinia.</p><p><br/></p></span>
+  </xpath>
+  <xpath expr="/t/t/div/div[4]/div/span" position="replace">
+    <span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum enim risus, ut pellentesque dui placerat eget. Cras ac lorem a magna mattis sagittis. Cras aliquet odio sed urna tristique viverra in ac mi. Ut purus nibh, dapibus egestas ornare id, condimentum at est. Mauris imperdiet vitae risus eu fringilla. Nunc consectetur risus nec nibh euismod, vel accumsan enim condimentum. Morbi a nisl porta lectus tempus pretium in et velit. Nullam lectus ipsum, volutpat eget convallis in, lobortis a erat. Morbi quis libero ut eros facilisis ornare et vel lacus. Fusce pellentesque lectus elementum, maximus nulla et, finibus augue.</p>
+      <p>Curabitur porttitor sem lorem, vel venenatis est ornare ac. Aenean id orci a tellus vestibulum sodales. Ut sed tristique sapien, sed faucibus urna. In sollicitudin id neque vel accumsan. Praesent ac convallis magna, ac ullamcorper nibh. Proin eu sagittis elit, pellentesque posuere mauris. Aenean placerat ac nibh vitae lacinia.</p>
+      <p>
+        <br/>
+      </p>
+    </span>
+  </xpath>
+  <xpath expr="/t/t/div/div[4]" position="after">
+    <div class="row">
+      <div class="col-4">
+        <span>New Column</span>
+      </div>
+      <div class="col-4">
+        <span>New Column</span>
+      </div>
+      <div class="col-4">
+        <span>New Column</span>
+      </div>
+    </div>
+  </xpath>
+  <xpath expr="/t/t/div/div[5]/div[1]/span" position="replace">
+    <span>Aanvang:</span>
+  </xpath>
+  <xpath expr="/t/t/div/div[5]/div[2]/span" position="replace">
+    <span>Gereed:</span>
+  </xpath>
+  <xpath expr="/t/t/div/div[5]/div[3]/span" position="replace">
+    <span>Jaar:</span>
+  </xpath>
+  <xpath expr="/t/t/div/div[5]" position="after">
+    <div class="row">
+      <div class="col-6">
+        <span>New Column</span>
+      </div>
+      <div class="col-6">
+        <span>New Column</span>
+      </div>
+    </div>
+  </xpath>
+  <xpath expr="/t/t/div/div[6]/div[1]/span" position="replace">
+    <span>New Column</span>
+  </xpath>
+  <xpath expr="/t/t/div/div[6]/div[1]/span" position="replace">
+    <span><strong>Akkoord opdrachtgever</strong><br/><br/>Naam:<br/><br/>Handtekening:<br/><br/><br/>Datum:<br/></span>
+  </xpath>
+  <xpath expr="/t/t/div/div[6]/div[2]/span" position="replace">
+    <span><strong>Akkoord BK Schoonmaak Plus</strong><br/><br/>Naam:<br/><br/>Handtekening:<br/><br/><br/>Datum:<br/></span>
+  </xpath>
+  <xpath expr="/t/t/div/div[5]" position="after">
+    <div class="row">
+      <div class="col">
+        <span>New Text Block</span>
+      </div>
+    </div>
+  </xpath>
+  <xpath expr="/t/t/div/div[6]/div/span" position="replace">
+    <span>
+      <br/>
+    </span>
+  </xpath>
+  <xpath expr="/t/t/div/div[7]/div[1]/span" position="replace">
+    <span><strong>Akkoord opdrachtgever</strong><br/><br/>Naam:<br/><br/>Handtekening:<br/><br/><br/>Datum:<br/></span>
+  </xpath>
+  <xpath expr="/t/t/div/div[7]/div[2]/span" position="replace">
+    <span><strong>Akkoord BK Schoonmaak Plus</strong><br/><br/>Naam:<br/><br/>Handtekening:<br/><br/><br/>Datum:<br/></span>
+  </xpath>
+</data>

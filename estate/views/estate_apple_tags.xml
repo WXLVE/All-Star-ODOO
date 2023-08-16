@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- <record id="estate_appletag_view_tree" model="ir.ui.view">
+        <field name="name">Apple Tag tree</field>
+        <field name="model">appletag.model</field>
+        <field name="arch" type="xml">
+            <tree string="Channel">  -->
+            <!-- ^^editable="bottom"^^ -->
+                <!-- <field name="name"/>
+            </tree>
+        </field>
+    </record> -->
+
+
+    <record id="appletag_view_tree" model="ir.ui.view">
+        <field name="name">Apple Tag tree</field>
+        <field name="model">appletag.model</field>
+        <field name="arch" type="xml">
+            <tree string="Property Tags" editable="bottom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="appletag_view_form" model="ir.ui.view">
+        <field name="name">appletag.form</field>
+        <field name="model">appletag.model</field>
+        <field name="arch" type="xml">
+            <form string="Apple">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <notebook>
+                            <page string="Description">
+                                <field name="name"/>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- <record id="appletag_search" model="ir.ui.view">
+        <field name="name">estate.appletag.search</field>
+        <field name="model">appletag.model</field>
+        <field name="arch" type="xml">
+            <search string="Apples">
+                <field name="name"/>
+                <separator/>
+                <filter string="Active" name="inactive" domain="[('active', '=', False)]"/>
+                <group expand="1" string="Group By">
+                    <filter string="Name" name="name" context="{'group_by':'name', 'residual_visible':True}"/>
+                </group>
+            </search>
+        </field>
+    </record> -->
+
+    <record id="apple_tags_action" model="ir.actions.act_window">
+        <field name="name">Apple Tags</field>
+        <field name="res_model">appletag.model</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+</odoo>

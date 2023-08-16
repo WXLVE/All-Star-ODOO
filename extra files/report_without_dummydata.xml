@@ -1,0 +1,125 @@
+<data>
+  <xpath expr="/t/t/div" position="inside">
+    <div class="row">
+      <div class="col-6">
+        <span>New Column</span>
+      </div>
+      <div class="col-6">
+        <span>New Column</span>
+      </div>
+    </div>
+  </xpath>
+  <xpath expr="/t/t/div/div/div[1]/span" position="replace">
+    <span>
+      <strong>KLANTGEGEVENS</strong>
+    </span>
+  </xpath>
+  <xpath expr="/t/t/div/div/div[2]/span" position="replace">
+    <span>
+      <strong>FACTUURADRES</strong>
+    </span>
+  </xpath>
+  <xpath expr="/t/t/div/div/div[1]/span/strong" position="replace">
+    <strong>KLANTGEGEVENS<br/><br/>naam:<br/><br/>T.a.v:<br/><br/>Adres:<br/><br/>Postcode &amp; Woonplaats:<br/><br/>Telefoonnummer:</strong>
+  </xpath>
+  <xpath expr="/t/t/div/div/div[1]/span/strong" position="replace">
+    <strong><strong>KLANTGEGEVENS</strong><br/><br/>naam:<br/><br/>T.a.v:<br/><br/>Adres:<br/><br/>Postcode &amp; Woonplaats:<br/><br/>Telefoonnummer:</strong>
+  </xpath>
+  <xpath expr="/t/t/div/div/div[1]/span/strong" position="replace">
+    <strong><strong>KLANTGEGEVENS</strong><br/><br/>naam:<br/><br/>T.a.v:<br/><br/>Adres:<br/><br/>Postcode &amp; Woonplaats:<br/><br/>Telefoonnummer:</strong>
+  </xpath>
+  <xpath expr="/t/t/div/div/div[2]/span/strong" position="replace">
+    <strong>FACTUURADRES<br/><br/>naam:<br/><br/>T.a.v:<br/><br/>Adres:<br/><br/>Postcode &amp; Woonplaats:<br/><br/>Telefoonnummer:<br/></strong>
+  </xpath>
+  <xpath expr="/t/t/div/div" position="after">
+    <table class="table o_report_block_table">
+      <thead>
+        <tr>
+          <th>
+            <span>Name</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr t-foreach="doc.analytic_account_id.line_ids" t-as="table_line">
+          <td>
+            <span t-field="table_line.display_name"/>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </xpath>
+  <xpath expr="/t/t/div/table/thead/tr/th/span" position="replace">
+    <span>WERKOMSCHRIJVING</span>
+  </xpath>
+  <xpath expr="/t/t/div/table/thead/tr/th/span" position="replace">
+    <span>WERKOMSCHRIJVING</span>
+  </xpath>
+  <xpath expr="/t/t/div/div/div[1]/span/strong" position="replace">
+    <strong><strong>KLANTGEGEVENS</strong><br/><br/>naam:<br/><br/>T.a.v:<br/><br/>Adres:<br/><br/>Postcode &amp; Woonplaats:<br/><br/>Telefoonnummer:<br/><br/></strong>
+  </xpath>
+  <xpath expr="/t/t/div/table/thead/tr/th/span" position="replace">
+    <span>WERKOMSCHRIJVING</span>
+  </xpath>
+  <xpath expr="/t/t/div/table" position="after">
+    <div class="row">
+      <div class="col">
+        <span>New Text Block</span>
+      </div>
+    </div>
+  </xpath>
+  <xpath expr="/t/t/div/div[2]/div/span" position="replace">
+    <span>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    </span>
+  </xpath>
+  <xpath expr="/t/t/div/div[2]" position="after">
+    <div class="row">
+      <div class="col-4">
+        <span>New Column</span>
+      </div>
+      <div class="col-4">
+        <span>New Column</span>
+      </div>
+      <div class="col-4">
+        <span>New Column</span>
+      </div>
+    </div>
+  </xpath>
+  <xpath expr="/t/t/div/div[3]/div[1]/span" position="replace">
+    <span>Aanvang:</span>
+  </xpath>
+  <xpath expr="/t/t/div/div[3]/div[2]/span" position="replace">
+    <span>Gereed:</span>
+  </xpath>
+  <xpath expr="/t/t/div/div[3]/div[3]/span" position="replace">
+    <span>Jaar:</span>
+  </xpath>
+  <xpath expr="/t/t/div/div[3]/div[3]/span" position="replace">
+    <span>Jaar:<br/><br/></span>
+  </xpath>
+  <xpath expr="/t/t/div/div[3]" position="after">
+    <div class="row">
+      <div class="col-6">
+        <span>New Column</span>
+      </div>
+      <div class="col-6">
+        <span>New Column</span>
+      </div>
+    </div>
+  </xpath>
+  <xpath expr="/t/t/div/div[4]/div[1]/span" position="replace">
+    <span>New Column</span>
+  </xpath>
+  <xpath expr="/t/t/div/div[4]/div[1]/span" position="replace">
+    <span><strong>Akkoord opdrachtgever</strong><br/><br/>Naam:<br/><br/>Handtekening:<br/><br/><br/>Datum:<br/></span>
+  </xpath>
+  <xpath expr="/t/t/div/div[4]/div[2]/span" position="replace">
+    <span><strong>Akkoord BK Schoonmaak Plus</strong><br/><br/>Naam:<br/><br/>Handtekening:<br/><br/><br/>Datum:<br/></span>
+  </xpath>
+</data>

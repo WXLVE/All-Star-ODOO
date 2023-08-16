@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- <odoo>   
+   
+    <menuitem id="test_menu_root" name="Apple">
+
+        <menuitem id="test_first_level_menu" name="Advertisements">
+
+            <menuitem id="test_model_menu_action" action="test_model_action"/>
+            
+        </menuitem>
+    </menuitem>
+</odoo> -->
+
+<odoo>
+    <!-- Top menu item -->
+    <menuitem id="test_menu_root" name="Apples">
+
+        <menuitem id="test_first_level_menu" name="Apple Level" sequence="5">
+
+            <menuitem id="test_model_menu_action" action="apple_action" sequence="5"/>
+
+        </menuitem>
+
+
+        <menuitem id="test_second_level_menu" name="Settings" sequence="10">
+
+            <menuitem id="apple_types_menu_action" action="apple_types_action" sequence="5"/>
+            
+            <menuitem id="test_model_menu_action3" action="apple_tags_action" sequence="10"/>
+        </menuitem>
+
+    </menuitem>
+
+
+
+</odoo>
+
+
