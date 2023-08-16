@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <!-- The Tree view, that shows us our data in a List way -->
+    <record id="peartag_view_tree" model="ir.ui.view">
+        <field name="name">Pear Tag tree</field>
+        <field name="model">peartag.model</field>
+        <field name="arch" type="xml">
+            <tree string="Property Tags" editable="bottom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- The Form View, where we Create, Read, Update and Delete our Data row -->
+    <record id="peartag_view_form" model="ir.ui.view">
+        <field name="name">Peartag.form</field>
+        <field name="model">peartag.model</field>
+        <field name="arch" type="xml">
+            <form string="Pear">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <notebook>
+                            <page string="Description">
+                                <field name="name"/>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+     <!-- this is the MAIN ACTION, where everyhting gets initialized from -->
+    <record id="pear_tags_action" model="ir.actions.act_window">
+        <field name="name">Pear Tags</field>
+        <field name="res_model">peartag.model</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+</odoo>

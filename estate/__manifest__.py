@@ -6,6 +6,8 @@
     'depends': [
         'base',
         'web',
+        "web_tour",
+        'web_map',
     ],
     
     
@@ -23,10 +25,28 @@
         'views/estate_apple_views.xml',
         "views/res_users_view.xml",
         'views/estate_menus.xml',
-
-
+        # "views/apple_assets.xml",
+        # 'views/hello_world_views.xml'
 
     ],
+  
+    'qweb': [
+        # 'estate/static/src/xml/hello_world.xml',
+        "estate/static/src/js/components/PartnerOrderSummary.xml"
+            
+            ],
+  
+     'assets': { 
+         'web.assets_backend': [
+            #  'estate/static/src/js/hello_world.js',
+            #  'estate/static/src/js/tour.js',
+            #  'estate/static/src/css/hello_world.css',
+             'estate/static/src/js/components/PartnerOrderSummary.js', 
+         ] 
+     },
+    
+
+  
     "application": True,
 }
 

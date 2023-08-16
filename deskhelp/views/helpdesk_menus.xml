@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+
+<odoo>
+    <!-- Top menu item -->
+    <menuitem id="test_menu_root" name="Questions" web_icon = "deskhelp,static/src/img/icon.png">
+
+        <menuitem id="test_first_level_menu" name="Questions Level" sequence="5">
+
+            <menuitem id="test_model_menu_action" action="question_action" sequence="5"/>
+
+        </menuitem>
+
+
+        <menuitem id="test_second_level_menu" name="Documentation" sequence="10">
+
+            <menuitem id="documentation_model_menu_action" action="documentation_action" sequence="5"/>
+            
+            <menuitem id="test_model_menu_action3" action="documentation_tags_action" sequence="10"/>
+
+        </menuitem>
+
+    </menuitem>
+
+
+
+</odoo>
+
+

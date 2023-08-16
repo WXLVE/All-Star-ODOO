@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="documentation_tags_view_tree" model="ir.ui.view">
+        <field name="name">Documentation Tags tree</field>
+        <field name="model">documentationtag.model</field>
+        <field name="arch" type="xml">
+            <tree string="Documentation Tags" editable="bottom">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="documentation_tags_view_form" model="ir.ui.view">
+        <field name="name">documentationtag.form</field>
+        <field name="model">documentationtag.model</field>
+        <field name="arch" type="xml">
+            <form string="Documentation">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <notebook>
+                            <page string="Description">
+                                <field name="name"/>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="documentation_tags_action" model="ir.actions.act_window">
+        <field name="name">Documentation Tags</field>
+        <field name="res_model">documentationtag.model</field>
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+</odoo>

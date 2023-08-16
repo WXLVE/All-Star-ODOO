@@ -1,0 +1,20 @@
+<!-- <odoo>
+   <template id="assets_backend" name="tour_demo assets" inherit_id="web.assets_backend">
+       <xpath expr="." position="inside">
+           <script type="text/javascript"
+                src="/estate/static/src/js/mobile_tour.js">
+           </script>
+       </xpath>
+   </template>
+</odoo> -->
+
+
+<odoo>
+    <data>
+        <template id="apple_assets_backend" name="Apples_asset_tour" inherit_id="test_menu_root">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="estate,static/src/js/tour.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

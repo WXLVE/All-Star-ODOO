@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- Here we build our "MAIN" menu items and buttons, from where we can navigate from to our modules -->
+<odoo>
+    <!-- HEAD Module Button, this will be the button we see in the "Apps" menu -->
+    <menuitem id="test_menu_root" name="Pears" web_icon = "estate,static/src/img/icon.png">
+        <!-- In this identation we find all the menu we will see in the header -->
+        <menuitem id="test_first_level_menu" name="Pear Level" sequence="5">
+            <!-- These menuitems will be visible in the dropdown when pressed on the header button -->
+            <menuitem id="test_model_menu_action" action="pear_action" sequence="5"/>
+
+        </menuitem>
+
+
+        <menuitem id="test_second_level_menu" name="Settings" sequence="10">
+
+            <menuitem id="pear_types_menu_action" action="pear_types_action" sequence="5"/>
+            
+            <menuitem id="test_model_menu_action3" action="pear_tags_action" sequence="10"/>
+        </menuitem>
+
+    </menuitem>
+
+
+
+</odoo>
+

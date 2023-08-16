@@ -1,16 +1,14 @@
-
+# All needed Imports
 from odoo import fields, models, api
 from odoo.exceptions import ValidationError, UserError
 from odoo.tools import float_compare, float_is_zero
 from dateutil.relativedelta import relativedelta
-from .test_api import synchronize_data
-# from openerp import api
 
-    
-class simple_Apple(models.Model):
-    #Naming Our Model
-    _name = "apple.model"
-    _description = "Apple makes Apples"
+    # Here we Define our Model
+class simple_Model(models.Model):
+    # Model Details
+    _name = "pear.model"
+    _description = "A Example Model with all different types of fields"
     _order = "id desc"
     
     _sql_constraints = [
@@ -46,11 +44,11 @@ class simple_Apple(models.Model):
         )
     
     # Special and IDS
-    apple_type_id = fields.Many2one('appletype.model', string='Apple Types')
+    pear_type_id = fields.Many2one('peartype.model', string='pear types')
     salesman_id = fields.Many2one("res.users", string="Salesman", default=lambda self: self.env.user)
     buyer_id = fields.Many2one("res.partner", string="Buyer", readonly=True, copy=False)
-    tag_ids = fields.Many2many('appletag.model', string="Tags")
-    offer_ids = fields.One2many('appleoffer.model',"property_id", string = "Offers")
+    tag_ids = fields.Many2many('peartag.model', string="Tags")
+    offer_ids = fields.One2many('pearoffer.model',"property_id", string = "Offers")
     
     
 
@@ -80,8 +78,8 @@ class simple_Apple(models.Model):
         default="new",
     )
 
-    def method_b(self):
-        synchronize_data()
+    # def method_b(self):
+    #     synchronize_data()
 
     # ------------------------------------------ CRUD Methods -------------------------------------
 
@@ -139,27 +137,3 @@ class simple_Apple(models.Model):
         if "sold" in self.mapped("state"):
             raise UserError("Sold properties cannot be canceled.")
         return self.write({"state": "canceled"})
-    
-
-    # def action_do_accept(self):
-    #     for record in self:
-    #             if record.buyer_id == "" and record.selling_price != "":
-    #                 record.status = "accepted"
-    #                 latest_offer = self.env[record.offer_ids].search([], limit=1, order='create_date desc')
-    #                 latest_offer.status = "accepted"
-    #                 record.buyer_id = latest_offer.partner_id
-    #                 record.selling_price = latest_offer.price
-    #     return True
-    
-    # def action_do_refuse(self):
-    #     for record in self:
-    #         if record.buyer_id != "" and record.selling_price != "":
-    #             record.status = "accepted"
-    #             latest_offer = self.env[record.offer_ids].search([], limit=1, order='create_date desc')
-    #             latest_offer.status = "refused"
-    #     return True
-    
-# class Simple_AppleLine(models.Model):
-#     _inherit = 'apple.model'
-
-#     vehicle_id = fields.Many2one('appletag.model', string='Type')

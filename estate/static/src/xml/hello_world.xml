@@ -1,0 +1,8 @@
+<templates xml:space="preserve">    
+  <div t-name="action_hello_world" class="hello-world">      
+    <h1>Hello Odoo</h1>        
+    <div>
+      <t t-esc="widget.info"></t>
+    </div>    
+  </div>
+</templates>

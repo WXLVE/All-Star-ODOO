@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <odoo>
-
-    <record id="apple_type_view_form" model="ir.ui.view">
-        <field name="name">appletype.form</field>
-        <field name="model">appletype.model</field>
+    <!-- The Form View, where we Create, Read, Update and Delete our Data row -->
+    <record id="pear_type_view_form" model="ir.ui.view">
+        <field name="name">Peartype.form</field>
+        <field name="model">peartype.model</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
-                        <button name="%(estate.apple_offer_action)d" type="action" class="oe_stat_button" icon="fa-money">
+                        <button name="%(base_module.pear_offer_action)d" type="action" class="oe_stat_button" icon="fa-money">
                             <field name="offer_count" widget="statinfo" string="Offers"/>
                         </button>
                         <!-- This is another solution using a method call -->
@@ -22,7 +22,7 @@
                         </h1>
                     </div>
                     <notebook>
-                        <page string="Apples">
+                        <page string="Pears">
                             <field name="property_ids" readonly="1">
                                 <tree>
                                     <field name="name"/>
@@ -36,10 +36,10 @@
             </form>
         </field>
     </record>
-
-    <record id="appletype_view_tree" model="ir.ui.view">
-        <field name="name">Appletype.tree</field>
-        <field name="model">appletype.model</field>
+    <!-- The Tree view, that shows us our data in a List way -->
+    <record id="peartype_view_tree" model="ir.ui.view">
+        <field name="name">Peartype.tree</field>
+        <field name="model">peartype.model</field>
         <field name="arch" type="xml">
             <tree string="Channel"> 
             <!-- ^^editable="bottom"^^ -->
@@ -50,14 +50,14 @@
             </tree>
         </field>
     </record>
-
-    <record id="apple_types_action" model="ir.actions.act_window">
-        <field name="name">Apple Types</field>
-        <field name="res_model">appletype.model</field>
+     <!-- this is the MAIN ACTION, where everyhting gets initialized from-->
+    <record id="pear_types_action" model="ir.actions.act_window">
+        <field name="name">Pear Types</field>
+        <field name="res_model">peartype.model</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
-                Create a apple type
+                Create a Pear type
             </p>
         </field>
     </record>

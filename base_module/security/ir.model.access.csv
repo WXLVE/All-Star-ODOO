@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_pear_model,access_pear_model,model_pear_model,,1,1,1,1
+access_peartag_model,access_peartag_model,model_peartag_model,,1,1,1,1
+access_pearoffer_model,access_pearoffer_model,model_pearoffer_model,,1,1,1,1
+access_peartype_model,access_peartype_model,model_peartype_model,,1,1,1,1

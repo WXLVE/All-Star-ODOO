@@ -1,0 +1,4 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_question_model,access_question_model,model_question_model,,1,1,1,1
+access_documentation_model,access_documentation_model,model_documentation_model,,1,1,1,1
+access_documentationtag_model,access_documentationtag_model,model_documentationtag_model,,1,1,1,1

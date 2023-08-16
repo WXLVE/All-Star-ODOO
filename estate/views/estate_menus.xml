@@ -13,7 +13,7 @@
 
 <odoo>
     <!-- Top menu item -->
-    <menuitem id="test_menu_root" name="Apples">
+    <menuitem id="test_menu_root" name="Apples" web_icon = "estate,static/src/img/icon.png">
 
         <menuitem id="test_first_level_menu" name="Apple Level" sequence="5">
 

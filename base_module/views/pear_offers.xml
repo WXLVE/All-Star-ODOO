@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- The Form View, where we Create, Read, Update and Delete our Data row -->
+    <record id="pear_offer_view_form" model="ir.ui.view">
+        <field name="name">Pearoffer.form</field>
+        <field name="model">pearoffer.model</field>
+        <field name="arch" type="xml">
+            <form string="Pear Offer">
+                <group>
+                    <field name="price"/>
+                    <field name="partner_id"/>
+                </group>
+            </form>
+        </field>
+    </record>
+    <!-- The Tree view, that shows us our data in a List way -->
+    <record id="pear_offer_view_tree" model="ir.ui.view">
+        <field name="name">Pearoffer.tree</field>
+        <field name="model">pearoffer.model</field>
+        <field name="arch" type="xml">
+            <tree string="Property Offers" editable="bottom" decoration-success="status == 'accepted'" decoration-danger="status == 'refused'">
+                <field name="price"/>
+                <field name="partner_id"/>
+                <field name="validity"/>
+                <field name="date_deadline"/>
+                <button name="action_accept" type="object" title="Accept" icon="fa-check" attrs="{'invisible': [('status', '!=', False)]}"/>
+                <button name="action_refuse" type="object" title="Refuse" icon="fa-times" attrs="{'invisible': [('status', '!=', False)]}"/>
+                <field name="status" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+     <!-- this is the MAIN ACTION, where everyhting gets initialized from -->
+    <record id="pear_offer_action" model="ir.actions.act_window">
+        <field name="name">Property Offers</field>
+        <field name="res_model">pearoffer.model</field>
+        <field name="domain">[('pear_type_id','=', active_id)]</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>
