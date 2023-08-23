@@ -2,7 +2,7 @@
 
 <odoo>
 
-    <menuitem id="cube_menu_root" name="Test">
+    <menuitem id="cube_menu_root" name="Cube">
         <menuitem id="cube_first_level_menu" name="First Level">
             <menuitem id="cube_model_menu_action" action="cube_action"/>
         </menuitem>
