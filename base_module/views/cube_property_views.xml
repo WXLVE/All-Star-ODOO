@@ -1,10 +1,14 @@
-<xml>
 
-    <record id="cube_action" model="ir.actions.act_window">
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+      <record id="cube_action" model="ir.actions.act_window">
         <field name="cube_name"></field>
         <field name="res_model">cube.model</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html"></field>
-    </record>
+    </record>  
 
-</xml>
+</odoo>
+
+
