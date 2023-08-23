@@ -1,0 +1,5 @@
+<menuitem id="cube_menu_root" name="Test">
+    <menuitem id="cube_first_level_menu" name="First Level">
+        <menuitem id="cube_model_menu_action" action="cube_model_action"/>
+    </menuitem>
+</menuitem>
