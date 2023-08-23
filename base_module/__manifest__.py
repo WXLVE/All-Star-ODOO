@@ -6,6 +6,7 @@
 
     "data": [
         'security/ir.model.access.csv'
+        'views/cube_property_views.xml'
     ],
 
     "installable": True,
