@@ -39,7 +39,7 @@ class TestModel(models.Model):
             ("sold", "Sold"),
             ("canceled", "Canceled"),
         ],
-        string = "Orientation",
+        string = "State",
     	required = True,
         copy = False,
         default = "new",
