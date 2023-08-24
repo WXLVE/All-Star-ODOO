@@ -1,6 +1,6 @@
 <odoo>
     <template id="test_snippet" name="testSnippet">
-        <t t-snippet="base_module.test_snippet" editable="false">
+        <t t-if="not edit_mode">
             <section class="index_snippet">
                 <div class="snippet">
                     <ul>
@@ -14,6 +14,7 @@
     </template>
     <template id="index_banner" inherit_id="website.snippets" name="Index banner">
         <xpath expr="//div[@id='snippet_structure']//t[@t-snippet][last()]" position="after">
+            <t t-set="edit_mode" t-value="False"/>
             <t t-snippet="base_module.test_snippet"/>
         </xpath>
     </template>
