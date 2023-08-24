@@ -2,6 +2,42 @@
 
 <odoo>
 
+    <record id="cube_view_form" model="ir.ui.view">
+        <field name="name">cubeForm</field>
+        <field name="model">cube.model</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="cube_type_id"/>
+                        <field name="postcode"/>
+                        <field name="date_availability"/>
+                    </group>
+                    <group>
+                        <field name="postcode"/>
+                        <field name="expected_price"/>
+                        <field name="date_availability"/>
+                        <field name="selling_price"/>
+                    </group>
+                </group>
+                <notebook>
+                    <page string="Description">
+                        <group>
+                            <field name="description"/>
+                            <field name="bedrooms"/>
+                            <field name="living_area"/>
+                            <field name="facades"/>
+                            <field name="garage"/>
+                            <field name="garden"/>
+                            <field name="garden_area"/>
+                            <field name="orientation"/>
+                        </group>
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+
     <record id="cube_listView_tree" model="ir.ui.view">
         <field name="name">cube.tree</field>
         <field name="model">cube.model</field>
@@ -33,5 +69,3 @@
     </record>
 
 </odoo>
-
-

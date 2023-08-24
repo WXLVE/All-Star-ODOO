@@ -9,6 +9,7 @@ class TestModel(models.Model):
         return fields.Date.context_today(self) + relativedelta(months=3)
 
     name = fields.Char(required = True)
+    description = fields.Char('Description')
     postcode = fields.Char('Postcode')
     date_availability = fields.Date('Date Availability', default=lambda self: self._default_date_availability(), copy=False)
     expected_price = fields.Float('Expected Price', required=True)
@@ -21,7 +22,7 @@ class TestModel(models.Model):
     garden_area = fields.Integer('Garden Area')
     active = fields.Boolean("Active", default=True)
     orientation = fields.Selection(
-        selection=[
+        selection = [
             ("north", "North"),
             ("east", "East"),
             ("west", "West"),
@@ -32,16 +33,16 @@ class TestModel(models.Model):
             copy = False,
         )
     state = fields.Selection(
-        selection=[
+        selection = [
             ("new", "New"),
             ("offer_received", "Offer Received"),
             ("offer_accepted", "Offer Accepted"),
             ("sold", "Sold"),
             ("canceled", "Canceled"),
-        ],
-        string = "State",
-    	required = True,
-        copy = False,
-        default = "new",
-    )
+            ],
+            string = "State",
+            required = True,
+            copy = False,
+            default = "new",
+        )
 
