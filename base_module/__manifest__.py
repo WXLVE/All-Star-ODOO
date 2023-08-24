@@ -11,6 +11,8 @@
         'security/ir.model.access.csv',
         'views/cube_property_views.xml',
         'views/cube_menus.xml',
+
+        'views/snippets/testSnippet.xml',
     ],
     "installable": True,
     'license': 'LGPL-3',
