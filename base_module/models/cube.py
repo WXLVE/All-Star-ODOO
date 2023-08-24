@@ -15,14 +15,14 @@ class TestModel(models.Model):
     garage = fields.Boolean('Garage')
     garden = fields.Boolean('Garden')
     garden_area = fields.Integer('Garden Area')
-    orientation = fields.Selection(
-        selection=[
-            ("north", "North"),
-            ("east", "East"),
-            ("west", "West"),
-            ("south", "South"),
-            ("canceled", "Canceled"),
-            ],
-            string="Orientation",
-            copy=False,
-        )
+    # orientation = fields.Selection(
+    #     selection=[
+    #         ("north", "North"),
+    #         ("east", "East"),
+    #         ("west", "West"),
+    #         ("south", "South"),
+    #         ("canceled", "Canceled"),
+    #         ],
+    #         string="Orientation",
+    #         copy=False,
+    #     )
