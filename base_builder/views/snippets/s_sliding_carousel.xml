@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_sliding_carousel" name="Sliding Carousel">
+        <section class="s_sliding_carousel" data-vcss="001">
+
+            <div class="container sal-animate" data-sal="fade" data-sal-duration="850" data-sal-easing="ease-out-bounce">
+                <div class="section--padding-b">
+                    <div class="product_slider_wrapper">
+                        <div class="">
+                            <div class="section--darker">
+                                <h2>
+                    Kies jouw daktent
+                                </h2>
+                                <ul>
+                                    <li class="product_slider_item active" data-index="0">
+                        Beyond X Medium daktent
+                                    </li>
+                                    <div class="hr hr--dark">
+                                    </div>
+                                    <li class="product_slider_item" data-index="1">
+                        Beyond X Large daktent
+                                    </li>
+                                    <div class="hr hr--dark">
+                                    </div>
+                                    <li class="product_slider_item" data-index="2">
+                        Air XL daktent
+                                    </li>
+                                    <div class="hr hr--dark">
+                                    </div>
+                                    <li class="product_slider_item" data-index="3">
+                        Light 140 daktent
+                                    </li>
+                                    <div class="hr hr--dark">
+                                    </div>
+                                    <li class="product_slider_item" data-index="4">
+                        Light 220 daktent
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section--light">
+                            <div data-index="0" class="product_slider_item_info active">
+                                <div class="product_slider_title">
+                    Beyond
+                                    <span>
+                        X-M
+                                    </span>
+                                </div>
+                                <img class="product_slider_item_image b-lazy b-lazy-fade b-loaded" src="https://www.fjordsen.com/media/yjahkqfq/beyond-x-medium-voorkant.png?width=625&amp;height=478&amp;rnd=133338075875600000" alt="Beyond X Medium Voorkant"></img>
+                                <div class="product_slider_item_stats">
+                                    <div class="text_icon block">
+                                        <i class="icon icon-time">
+                                        </i>
+                        2 min
+                                    </div>
+                                    <div class="text_icon block">
+                                        <i class="icon icon-resize">
+                                        </i>
+                        220 x 140 x 140 cm
+                                    </div>
+                                    <div class="text_icon block">
+                                        <i class="icon icon-weight">
+                                        </i>
+                        47 kg
+                                    </div>
+                                </div>
+                                <div class="row--align justify-between">
+                                    <h3 class="no-margin">
+                        € 1099
+                                    </h3>
+                                    <div class="hr hr--dark">
+                                    </div>
+                                    <div>
+                                        <a href="/nl/daktenten/beyond-x-medium" class="btn btn--normal btn--primary margin-x-1x">
+                        Lees meer
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="1" class="product_slider_item_info">
+                                <div class="product_slider_title">
+                    Beyond
+                                    <span>
+                        X-L
+                                    </span>
+                                </div>
+                                <img class="product_slider_item_image b-lazy b-lazy-fade b-loaded" src="https://www.fjordsen.com/media/kdvhvg1m/beyond-x-large-voorkant.png?width=625&amp;height=478&amp;rnd=133338089014830000" alt="Beyond X Large Voorkant"></img>
+                                <div class="product_slider_item_stats">
+                                    <div class="text_icon block">
+                                        <i class="icon icon-time">
+                                        </i>
+                        2 min
+                                    </div>
+                                    <div class="text_icon block">
+                                        <i class="icon icon-resize">
+                                        </i>
+                        220 x 220 x 140 cm
+                                    </div>
+                                    <div class="text_icon block">
+                                        <i class="icon icon-weight">
+                                        </i>
+                        54 kg
+                                    </div>
+                                </div>
+                                <div class="row--align justify-between">
+                                    <h3 class="no-margin">
+                        € 1299
+                                    </h3>
+                                    <div class="hr hr--dark">
+                                    </div>
+                                    <div>
+                                        <a href="/nl/daktenten/beyond-x-large" class="btn btn--normal btn--primary margin-x-1x">
+                        Lees meer
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="2" class="product_slider_item_info">
+                                <div class="product_slider_title">
+                    Air
+                                    <span>
+                        XL
+                                    </span>
+                                </div>
+                                <img class="product_slider_item_image b-lazy b-lazy-fade b-loaded" src="https://www.fjordsen.com/media/trfamwmq/air-xl-transparant.png?width=625&amp;height=478&amp;rnd=132998611845570000" alt="Air XL rooftop tent grey"></img>
+                                <div class="product_slider_item_stats">
+                                    <div class="text_icon block">
+                                        <i class="icon icon-time">
+                                        </i>
+                        10 min
+                                    </div>
+                                    <div class="text_icon block">
+                                        <i class="icon icon-resize">
+                                        </i>
+                        220 x 220 x 140 cm
+                                    </div>
+                                    <div class="text_icon block">
+                                        <i class="icon icon-weight">
+                                        </i>
+                        74 kg
+                                    </div>
+                                </div>
+                                <div class="row--align justify-between">
+                                    <h3 class="no-margin">
+                        € 2295
+                                    </h3>
+                                    <div class="hr hr--dark">
+                                    </div>
+                                    <div>
+                                        <a href="/nl/daktenten/air-xl" class="btn btn--normal btn--primary margin-x-1x">
+                        Lees meer
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="3" class="product_slider_item_info">
+                                <div class="product_slider_title">
+                    Light
+                                    <span>
+                        140
+                                    </span>
+                                </div>
+                                <img class="product_slider_item_image b-lazy b-lazy-fade b-loaded" src="https://www.fjordsen.com/media/fajbs2sx/image-3.png?width=625&amp;height=478&amp;rnd=132998532138570000" alt="Fjordsen rooftop tent grey 2"></img>
+                                <div class="product_slider_item_stats">
+                                    <div class="text_icon block">
+                                        <i class="icon icon-time">
+                                        </i>
+                        2 min
+                                    </div>
+                                    <div class="text_icon block">
+                                        <i class="icon icon-resize">
+                                        </i>
+                        220 x 140 cm
+                                    </div>
+                                    <div class="text_icon block">
+                                        <i class="icon icon-weight">
+                                        </i>
+                        50 kg
+                                    </div>
+                                </div>
+                                <div class="row--align justify-between">
+                                    <h3 class="no-margin">
+                        € 1370
+                                    </h3>
+                                    <div class="hr hr--dark">
+                                    </div>
+                                    <div>
+                                        <a href="/nl/daktenten/light-140" class="btn btn--normal btn--primary margin-x-1x">
+                        Lees meer
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="4" class="product_slider_item_info">
+                                <div class="product_slider_title">
+                    Light
+                                    <span>
+                        220
+                                    </span>
+                                </div>
+                                <img class="product_slider_item_image b-lazy b-lazy-fade b-loaded" src="https://www.fjordsen.com/media/tcgeioup/light-220-transparant.png?width=625&amp;height=478&amp;rnd=132998517907870000" alt="Light 220 rooftop tent black"></img>
+                                <div class="product_slider_item_stats">
+                                    <div class="text_icon block">
+                                        <i class="icon icon-time">
+                                        </i>
+                        2 min
+                                    </div>
+                                    <div class="text_icon block">
+                                        <i class="icon icon-resize">
+                                        </i>
+                        220 x 220 cm
+                                    </div>
+                                    <div class="text_icon block">
+                                        <i class="icon icon-weight">
+                                        </i>
+                        60 kg
+                                    </div>
+                                </div>
+                                <div class="row--align justify-between">
+                                    <h3 class="no-margin">
+                        € 1950
+                                    </h3>
+                                    <div class="hr hr--dark">
+                                    </div>
+                                    <div>
+                                        <a href="/nl/daktenten/light-220" class="btn btn--normal btn--primary margin-x-1x">
+                        Lees meer
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </template>
+
+    <record id="base_module.s_sliding_carousel_000_css" model="ir.asset">
+        <field name="name">Sliding Carousel 000 SCSS</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">base_module/static/src/snippets/s_sliding_carousel/carousel.css</field>
+        <field name="active" eval="False"/>
+    </record>
+
+    <record id="base_module.s_sliding_carousel_000_js" model="ir.asset">
+        <field name="name">Sliding Carousel 000 JS</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">base_module/static/src/snippets/s_sliding_carousel/000.js</field>
+        <field name="active" eval="False"/>
+
+    </record>
+    <!-- <template id="my_custom_css_asset" name="my_custom_css assets" inherit_id="web.assets_backend">
+      <xpath expr="." position="inside">
+        <link rel="stylesheet" href="/your_module/static/src/snipets/s_sliding_carousel/carousel.css"/>
+      </xpath>
+    </template> -->
+
+    <template id="external_snippets" inherit_id="website.snippets" priority="8">
+        <xpath expr="//div[@id='snippet_structure']//t[@t-snippet][last()]" position="after">
+            <t t-snippet="base_module.s_sliding_carousel"/>
+        </xpath>
+    </template>
+
+
+</odoo>
