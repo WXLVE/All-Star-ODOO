@@ -6,9 +6,9 @@ class TestModel(models.Model):
 
     name = fields.Char(required = True)
     postcode = fields.Char('Postcode')
-    date_availability = fields.Date('Date Availability')
+    date_availability = fields.Date('Date Availability', copy=False)
     expected_price = fields.Float('Expected Price', required=True)
-    selling_price = fields.Float('Selling Price')
+    selling_price = fields.Float('Selling Price', readonly=True, copy=False)
     bedrooms = fields.Integer('Bedrooms')
     living_area = fields.Integer('Living Area')
     facades = fields.Integer('Facades')
