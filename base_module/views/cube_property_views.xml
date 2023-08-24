@@ -9,7 +9,7 @@
             <form>
                 <group>
                     <group>
-                        <field name="cube_type_id"/>
+                        <!-- <field name="cube_type_id"/> -->
                         <field name="postcode"/>
                         <field name="date_availability"/>
                     </group>
