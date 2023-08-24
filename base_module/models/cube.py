@@ -13,7 +13,7 @@ class TestModel(models.Model):
     date_availability = fields.Date('Date Availability', default=lambda self: self._default_date_availability(), copy=False)
     expected_price = fields.Float('Expected Price', required=True)
     selling_price = fields.Float('Selling Price', readonly=True, copy=False)
-    bedrooms = fields.Integer('Bedrooms' default=2)
+    bedrooms = fields.Integer('Bedrooms', default=2)
     living_area = fields.Integer('Living Area')
     facades = fields.Integer('Facades')
     garage = fields.Boolean('Garage')
