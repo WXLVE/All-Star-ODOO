@@ -2,6 +2,7 @@
 
 <odoo>
 
+    <!-- On click view -->
     <record id="cube_view_form" model="ir.ui.view">
         <field name="name">cubeForm</field>
         <field name="model">cube.model</field>
@@ -36,6 +37,7 @@
         </field>
     </record>
 
+    <!-- List view -->
     <record id="cube_listView_tree" model="ir.ui.view">
         <field name="name">cube.tree</field>
         <field name="model">cube.model</field>
@@ -52,6 +54,29 @@
         </field>
     </record>
 
+    <!-- Search options -->
+    <record id="cube_view_search" model="ir.ui.view">
+        <field name="name">cube.search</field>
+        <field name="model">cube.model</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <!-- <field name="apple_type_id"/> -->
+                <field name="postcode"/>
+                <field name="expected_price"/>
+                <field name="bedrooms"/>
+                <field name="living_area"/>
+                <field name="facades"/>
+                <!-- <field name="garden"/>
+                <filter string="Available" name="available" domain="[('state', 'in', ('new', 'offer_received'))]"/>
+                <group expand="1" string="Group By">
+                    <filter string="Postcode" name='postcode' context="{'group_by':'postcode'}"/>
+                </group> -->
+            </search>
+        </field>
+    </record>
+
+    <!-- Basic view -->
     <record id="cube_action" model="ir.actions.act_window">
         <field name="name">Cube Action</field>
         <field name="res_model">cube.model</field>
