@@ -30,4 +30,6 @@ class TestModel(models.Model):
             string="Orientation",
             copy=False,
         )
+    
+    active = fields.Boolean("Active", default=True)
 
