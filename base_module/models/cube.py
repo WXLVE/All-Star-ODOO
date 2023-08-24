@@ -19,6 +19,7 @@ class TestModel(models.Model):
     garage = fields.Boolean('Garage')
     garden = fields.Boolean('Garden')
     garden_area = fields.Integer('Garden Area')
+    active = fields.Boolean("Active", default=True)
     orientation = fields.Selection(
         selection=[
             ("north", "North"),
@@ -27,9 +28,20 @@ class TestModel(models.Model):
             ("south", "South"),
             ("canceled", "Canceled"),
             ],
-            string="Orientation",
-            copy=False,
+            string = "Orientation",
+            copy = False,
         )
-    
-    active = fields.Boolean("Active", default=True)
+    state = fields.Selection(
+        selection=[
+            ("new", "New"),
+            ("offer_received", "Offer Received"),
+            ("offer_accepted", "Offer Accepted"),
+            ("sold", "Sold"),
+            ("canceled", "Canceled"),
+        ],
+        string = "Orientation",
+    	required = True,
+        copy = False,
+        default = "new",
+    )
 
