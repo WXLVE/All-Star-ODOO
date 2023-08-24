@@ -26,3 +26,4 @@ class TestModel(models.Model):
             string="Orientation",
             copy=False,
         )
+
