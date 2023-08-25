@@ -1,0 +1,105 @@
+.sidebar
+{
+    background-color: #EBE9E9;
+    width: 300px;
+}
+
+.block
+{
+    background-color: #EBE9E9;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px 0px;
+    margin-bottom: 20px;
+}
+
+.block p
+{
+    padding: 5px;
+}
+
+.block img
+{
+    margin-bottom: 10px;
+}
+
+.smallBlock
+{
+    width: 137px;
+    background-color: #EBE9E9;
+    display: flex;
+    align-items: center;
+    height: 85px;
+    flex-direction: column;
+    border: solid 2px transparent;
+}
+
+.smallBlock p 
+{
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.smallBlock img
+{
+    height: 25px;
+    width: 124px;
+    margin: 5px;
+}
+
+.smallBlock:hover
+{
+    background-color: whitesmoke;
+    transition: 0.5s;
+    border: solid 2px #FF8238;
+}
+
+.smallBlockPos
+{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: space-around;
+}
+
+h4
+{
+    margin: 0 0 0 10px;
+    font-size: x-large;
+}
+
+ul
+{
+    list-style-image: url("images/orange_checkmarkSmall.png");
+    padding-left: 25px;
+}
+
+li
+{
+    margin-bottom: 7px;
+    /* padding-left: 20px; */
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.topMargin
+{
+    margin-top: 15px;
+}
+
+p
+{
+    margin: 0;
+}

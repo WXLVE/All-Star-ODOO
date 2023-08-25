@@ -3,7 +3,9 @@
     "version": "16.0",  # Version
     "application": True,  # This line says the module is an App, and not a module
     'depends': [
-        "base"
+        "base",
+        'website',
+        'web',
         
     ],  # dependencies
 
@@ -14,6 +16,13 @@
 
         'views/snippets/testSnippet.xml',
     ],
+    'assets': {
+        'web.assets_frontend': [
+
+            'base_module/static/src/snippets/sidebar/sidebarstyle.css',
+        ],
+    },
+
     "installable": True,
     'license': 'LGPL-3',
 
