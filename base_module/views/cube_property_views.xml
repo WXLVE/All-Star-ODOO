@@ -33,11 +33,11 @@
                             <field name="orientation"/>
                         </group>
                     </page>
-                    <!-- <page string="Other info">
+                    <page string="Other info">
                         <group>
                             <field name="test"/>
                         </group>
-                    </page> -->
+                    </page>
                 </notebook>
             </form>
         </field>
