@@ -20,6 +20,7 @@
         'web.assets_frontend': [
 
             'base_module/static/src/snippets/sidebar/sidebarstyle.css',
+            'base_module/static/src/images/orange_checkmarkSmall.png',
         ],
     },
 
