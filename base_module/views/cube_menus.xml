@@ -12,7 +12,7 @@
 
         <menuitem id="cube_settings_menu" name="Settings">
 
-            <menuitem id="cube_model_menu_settings" action="cube_action"/>
+            <menuitem id="cube_model_menu_settings" action="cube_settings"/>
 
         </menuitem>
 
