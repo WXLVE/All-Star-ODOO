@@ -1,21 +1,18 @@
 <odoo>
     <template id="test_snippet" name="testSnippet">
-        <t t-if="not edit_mode">
-            <section class="index_snippet">
-                <div class="snippet">
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                    </ul>
-                </div>
-            </section>
-        </t>
+        <section class="index_snippet">
+            <div class="snippet">
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+        </section>
     </template>
     <template id="index_banner" inherit_id="website.snippets" name="Index banner">
         <xpath expr="//div[@id='snippet_structure']//t[@t-snippet][last()]" position="after">
-            <t t-set="edit_mode" t-value="False"/>
-            <t t-snippet="base_module.test_snippet"/>
+        <t t-snippet="base_module.test_snippet"/>
         </xpath>
     </template>
 </odoo>
