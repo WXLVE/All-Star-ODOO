@@ -97,18 +97,4 @@
         </field>
     </record>
 
-    <record id="cube_settings" model="ir.actions.act_window">
-        <field name="name">Cube Action</field>
-        <field name="res_model">cube.model</field>
-        <field name="view_mode">tree,form</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                Create a cube advertisement
-            </p>
-            <p>
-                Create cube properties and follow the selling process.
-            </p>
-        </field>
-    </record>
-
 </odoo>
