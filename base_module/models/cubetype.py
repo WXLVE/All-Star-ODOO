@@ -1,6 +1,6 @@
 from odoo import models, fields
 
-class TestModel(models.Model):
+class Typemodel(models.Model):
     _name = "cube.type"
     _description = "Type for cubes"
 

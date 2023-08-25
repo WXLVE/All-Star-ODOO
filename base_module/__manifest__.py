@@ -13,6 +13,7 @@
         'security/ir.model.access.csv',
         'views/cube_property_views.xml',
         'views/cube_menus.xml',
+        'views/cube_types.xml',
 
         'views/snippets/testSnippet.xml',
     ],
