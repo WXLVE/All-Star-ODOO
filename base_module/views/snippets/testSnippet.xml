@@ -17,31 +17,31 @@
                     <div class="smallBlockPos">
                         <a href="#">
                             <div class="smallBlock">
-                                <!-- <img src="images/dentalHouseSmall.png"> -->
+                                <img src="images/dentalHouseSmall.png" alt="Logo Digidenture"/>
                                 <p>Registratie</p>
                             </div>
                         </a>
                         <a href="#">
                             <div class="smallBlock">
-                                <!-- <img src="images/logo-multident.png"> -->
+                                <img src="images/logo-multident.png" alt="Logo Multident"/>
                                 <p>Groothandel tandprothetiek</p>
                             </div>
                         </a>
                         <a href="#">
                             <div class="smallBlock">
-                                <!-- <img src="images/logo-digidenture.png"> -->
-                                <!-- <p>Freescentrum & Service laboratorium</p> -->
+                                <img src="images/logo-digidenture.png" alt="Logo Digidenture"/>
+                                <p>Freescentrum &amp; Service laboratorium</p>
                             </div>
                         </a>
                         <a href="#">
                             <div class="smallBlock">
-                                <!-- <img src="images/logo-academie-voor-mondprothetiek.png"> -->
+                                <img src="images/logo-academie-voor-mondprothetiek.png" alt="Logo Academie voor monprothetiek"/>
                                 <p>Opleiding voor professionals mondprothetiek</p>
                             </div>
                         </a>
                     </div>
                     <div class="block topMargin">
-                        <!-- <img src="images/logo-blijdent.png" alt=""> -->
+                        <img src="images/logo-blijdent.png" alt="Logo Blijdent"/>
                         <p>
                             Blijdent levert producten voor digitalisering zoals o.a. scanners en CAD/CAM-software.
                             Naast apparatuur leveren wij ook implantaatgerelateerde producten zoals analogen, schroeven, scanmarkers, afdrukstiften maar ook Kerator en Ball abutments.
