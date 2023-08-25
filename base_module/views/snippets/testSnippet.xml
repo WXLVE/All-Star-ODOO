@@ -2,11 +2,52 @@
     <template id="test_snippet" name="testSnippet">
         <section class="index_snippet">
             <div class="snippet">
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                </ul>
+                <!-- HTML HERE -->
+                <div class="sidebar">
+                    <div class="block">
+                        <h4>Blijdent voordelen</h4>
+                        <ul>
+                            <li>Vóór 15:00 uur besteld, dezelfde dag verstuurd</li>
+                            <li><span class="bold">Gratis</span> verzending bij een minimale orderwaarde van €50,00 excl. BTW</li>
+                            <li>60 dagen retourtermijn</li>
+                            <li>Telefonisch advies: 0318 - 209 414</li>
+                            <li>Support helpdesk</li>
+                        </ul>
+                    </div>
+                    <div class="smallBlockPos">
+                        <a href="#">
+                            <div class="smallBlock">
+                                <!-- <img src="images/dentalHouseSmall.png"> -->
+                                <p>Registratie</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="smallBlock">
+                                <!-- <img src="images/logo-multident.png"> -->
+                                <p>Groothandel tandprothetiek</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="smallBlock">
+                                <!-- <img src="images/logo-digidenture.png"> -->
+                                <!-- <p>Freescentrum & Service laboratorium</p> -->
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="smallBlock">
+                                <!-- <img src="images/logo-academie-voor-mondprothetiek.png"> -->
+                                <p>Opleiding voor professionals mondprothetiek</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="block topMargin">
+                        <!-- <img src="images/logo-blijdent.png" alt=""> -->
+                        <p>
+                            Blijdent levert producten voor digitalisering zoals o.a. scanners en CAD/CAM-software.
+                            Naast apparatuur leveren wij ook implantaatgerelateerde producten zoals analogen, schroeven, scanmarkers, afdrukstiften maar ook Kerator en Ball abutments.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </template>
