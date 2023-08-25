@@ -35,7 +35,7 @@
                     </page>
                     <page string="Other info">
                         <group>
-                            <field name="test"/>
+                            <field name="name"/>
                         </group>
                     </page>
                 </notebook>
