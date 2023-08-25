@@ -60,7 +60,7 @@
     </record>
 
     <template id="index_banner" inherit_id="website.snippets" name="Index banner">
-        <xpath expr="//div[@id='snippet_structure']//t[@t-snippet][last()]" position="after">
+        <xpath expr="//div[@class='dynamic-container']//div[last()]" position="after">
         <t t-snippet="base_module.test_snippet"/>
         </xpath>
     </template>
