@@ -1,1 +1,1 @@
-from . import cube
+from . import cube, cubetype
