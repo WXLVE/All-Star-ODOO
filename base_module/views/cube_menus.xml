@@ -6,6 +6,9 @@
         <menuitem id="cube_first_level_menu" name="First Level">
             <menuitem id="cube_model_menu_action" action="cube_action"/>
         </menuitem>
+        <menuitem id="cube_settings_menu" name="Settings">
+            <menuitem id="cube_model_menu_settings" action="cube_settings"/>
+        </menuitem>
     </menuitem>
 
 </odoo>
