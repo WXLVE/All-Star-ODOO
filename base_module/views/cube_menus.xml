@@ -14,6 +14,8 @@
 
             <menuitem id="cube_model_menu_settings" action="cube_settings"/>
 
+            <menuitem id="cube_model_menu_tags" action="cube_tags_action"/>
+
         </menuitem>
 
     </menuitem>
