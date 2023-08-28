@@ -36,10 +36,10 @@
                         </group>
                     </page>
                     <page string="Other Info">
-                            <group>
-                                <field name="salesman_id"/>
-                                <field name="buyer_id"/>
-                            </group>
+                        <group>
+                            <field name="salesman_id"/>
+                            <field name="buyer_id"/>
+                        </group>
                     </page>
                 </notebook>
             </form>
