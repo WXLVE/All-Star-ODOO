@@ -13,5 +13,5 @@ class ResUsers(models.Model):
     # Relational
     # This domain gives the opportunity to mention the evaluated and non-evaluated domains
     property_ids = fields.One2many(
-        "cube.model", "salesman_id", string="Properties", domain=[("state", "in", ["new", "offer_received"])]
+        "apple.model", "salesman_id", string="Properties", domain=[("state", "in", ["new", "offer_received"])]
     )
