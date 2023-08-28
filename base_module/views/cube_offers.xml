@@ -14,10 +14,26 @@
         </field>
     </record>
 
+    <record id="cube_offer_view_tree" model="ir.ui.view">
+        <field name="name">cubeoffer.tree</field>
+        <field name="model">cubeoffer.model</field>
+        <field name="arch" type="xml">
+            <tree string="Property Offers" editable="bottom" decoration-success="status == 'accepted'" decoration-danger="status == 'refused'">
+                <field name="price"/>
+                <field name="partner_id"/>
+                <field name="validity"/>
+                <field name="date_deadline"/>
+                <button name="action_accept" type="object" title="Accept" icon="fa-check" attrs="{'invisible': [('status', '!=', False)]}"/>
+                <button name="action_refuse" type="object" title="Refuse" icon="fa-times" attrs="{'invisible': [('status', '!=', False)]}"/>
+                <field name="status" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
     <record id="cube_offer_action" model="ir.actions.act_window">
         <field name="name">Property Offers</field>
         <field name="res_model">cubeoffer.model</field>
-        <!-- <field name="domain">[('apple_type_id','=', active_id)]</field> -->
+        <field name="domain">[('cube_type_id','=', active_id)]</field>
         <field name="view_mode">tree,form</field>
     </record>
 
