@@ -6,5 +6,7 @@ class Typemodel(models.Model):
 
     name = fields.Char(required = True)
 
+    property_ids = fields.One2many("cube.model", "cube_type_id", string = "Cubes")
+
     
         
