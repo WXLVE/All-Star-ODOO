@@ -16,7 +16,6 @@
         'views/cube_types.xml',
         'views/cube_tags.xml',
         'views/res_users_view.xml',
-        'views/cube_offers.xml',
 
         'views/snippets/testSnippet.xml',
     ],

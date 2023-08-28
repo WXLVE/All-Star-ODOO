@@ -1,1 +1,1 @@
-from . import cube, cubeoffer, cubetype, cubetag, res_users
+from . import cube, cubetype, cubetag, res_users
