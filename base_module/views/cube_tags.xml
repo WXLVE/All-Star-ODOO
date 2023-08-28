@@ -16,7 +16,7 @@
         </field>
     </record>
 
-    <!-- <record id="cubetag_view_form" model="ir.ui.view">
+    <record id="cubetag_view_form" model="ir.ui.view">
         <field name="name">cubetag.form</field>
         <field name="model">cubetag.model</field>
         <field name="arch" type="xml">
@@ -35,7 +35,7 @@
                 </sheet>
             </form>
         </field>
-    </record> -->
+    </record>
 
     <record id="cube_tags_action" model="ir.actions.act_window">
         <field name="name">Cube Tags</field>

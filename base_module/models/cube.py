@@ -38,7 +38,7 @@ class TestModel(models.Model):
     cube_type_id = fields.Many2one('cube.type', string='Cube Types')
     salesman_id = fields.Many2one("res.users", string="Salesman", default=lambda self: self.env.user)
     buyer_id = fields.Many2one("res.partner", string="Buyer", readonly=True, copy=False)
-    # tag_ids = fields.Many2many('cubetag.model', string="Tags")
+    tag_ids = fields.Many2many('cubetag.model', string="Tags")
     # offer_ids = fields.One2many('cubeoffer.model',"property_id", string = "Offers")
 
     # state = fields.Selection(
