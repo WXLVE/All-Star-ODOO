@@ -32,7 +32,7 @@ class Apple_Offer(models.Model):
     
     #IDs and Relational
     partner_id = fields.Many2one("res.partner", string="Partner", required=True)
-    property_id = fields.Many2one('apple.model', string="Apples", required=True)
+    property_id = fields.Many2one('cube.model', string="Cubes", required=True)
 
     # For stat button:
     apple_type_id = fields.Many2one(

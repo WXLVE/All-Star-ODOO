@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="cube_offer_view_form" model="ir.ui.view">
+        <field name="name">cubeoffer.form</field>
+        <field name="model">cubeoffer.model</field>
+        <field name="arch" type="xml">
+            <form string="Cube Offer">
+                <group>
+                    <field name="price"/>
+                    <field name="partner_id"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="cube_offer_action" model="ir.actions.act_window">
+        <field name="name">Property Offers</field>
+        <field name="res_model">cubeoffer.model</field>
+        <!-- <field name="domain">[('apple_type_id','=', active_id)]</field> -->
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>
