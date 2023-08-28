@@ -34,7 +34,7 @@ class TestModel(models.Model):
         )
     
     # Special and IDS
-    cube_type_id = fields.Many2one('cube_type', string='Cube Types')
+    cube_type_id = fields.Many2one('cube.type', string='Cube Types')
     salesman_id = fields.Many2one("res.users", string="Salesman", default=lambda self: self.env.user)
     buyer_id = fields.Many2one("res.partner", string="Buyer", readonly=True, copy=False)
 
