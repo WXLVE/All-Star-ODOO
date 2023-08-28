@@ -2,17 +2,13 @@
 
 <odoo>
 
-    <record id="cube_tags" model="ir.actions.act_window">
-        <field name="name">Cube types</field>
-        <field name="res_model">cube.type</field>
-        <field name="view_mode">tree,form</field>
-        <field name="help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                Create a cube tag
-            </p>
-            <p>
-                Create cube properties and follow the selling process.
-            </p>
+    <record id="cubetag_view_tree" model="ir.ui.view">
+        <field name="name">Cube Tag tree</field>
+        <field name="model">cubetag.model</field>
+        <field name="arch" type="xml">
+            <tree string="Property Tags" editable="bottom">
+                <field name="name"/>
+            </tree>
         </field>
     </record>
 
