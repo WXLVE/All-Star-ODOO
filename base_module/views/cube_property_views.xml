@@ -24,6 +24,7 @@
                     <page string="Description">
                         <group>
                             <field name="name"/>
+                            <field name="cube_type_id"/>
                             <field name="description"/>
                             <field name="bedrooms"/>
                             <field name="living_area"/>
