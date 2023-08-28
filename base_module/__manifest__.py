@@ -14,6 +14,7 @@
         'views/cube_property_views.xml',
         'views/cube_menus.xml',
         'views/cube_types.xml',
+        "views/res_users_view.xml",
 
         'views/snippets/testSnippet.xml',
     ],
