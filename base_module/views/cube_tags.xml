@@ -16,7 +16,7 @@
         </field>
     </record>
 
-    <record id="applecube_view_form" model="ir.ui.view">
+    <record id="cubetag_view_form" model="ir.ui.view">
         <field name="name">cubetag.form</field>
         <field name="model">cubetag.model</field>
         <field name="arch" type="xml">
