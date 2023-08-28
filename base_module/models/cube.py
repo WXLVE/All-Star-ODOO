@@ -38,20 +38,20 @@ class TestModel(models.Model):
     cube_type_id = fields.Many2one('cube.type', string='Cube Types')
     salesman_id = fields.Many2one("res.users", string="Salesman", default=lambda self: self.env.user)
     buyer_id = fields.Many2one("res.partner", string="Buyer", readonly=True, copy=False)
-    tag_ids = fields.Many2many('cubetag.model', string="Tags")
-    # offer_ids = fields.One2many('cubeoffer.model',"property_id", string = "Offers")
+    tag_ids = fields.Many2many('appletag.model', string="Tags")
+    # offer_ids = fields.One2many('appleoffer.model',"property_id", string = "Offers")
 
-    # state = fields.Selection(
-    #     selection = [
-    #         ("new", "New"),
-    #         ("offer_received", "Offer Received"),
-    #         ("offer_accepted", "Offer Accepted"),
-    #         ("sold", "Sold"),
-    #         ("canceled", "Canceled"),
-    #         ],
-    #         string = "State",
-    #         required = True,
-    #         copy = False,
-    #         default = "new",
-    #     )
+    state = fields.Selection(
+        selection = [
+            ("new", "New"),
+            ("offer_received", "Offer Received"),
+            ("offer_accepted", "Offer Accepted"),
+            ("sold", "Sold"),
+            ("canceled", "Canceled"),
+            ],
+            string = "State",
+            required = True,
+            copy = False,
+            default = "new",
+        )
 
