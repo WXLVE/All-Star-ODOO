@@ -28,4 +28,4 @@ class Cube_Offer(models.Model):
         )
     
     partner_id = fields.Many2one("res.partner", string="Partner", required=True)
-    property_id = fields.Many2one('apple.model', string="Apples", required=True)
+    property_id = fields.Many2one('cube.model', string="Cubes", required=True)
